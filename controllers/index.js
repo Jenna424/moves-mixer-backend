@@ -59,6 +59,32 @@ const createExercise = async (req, res) => {
   }
 }
 
+const deleteExercise = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deletedExercise = await Exercise.findByIdAndDelete(id)
+    if (deletedExercise) {
+      const workoutId = deletedExercise.workout
+      const workout = await Workout.findById(workoutId)
+      // Removes the deleted exercise from the workout's collection of exercises
+      const remainingExerciseObjectIds = workout.exercises.filter(
+        (exerciseObjectId) => {
+          return exerciseObjectId.toString() !== id
+        }
+      )
+      workout.exercises = remainingExerciseObjectIds
+      await workout.save()
+      return res
+        .status(200)
+        .send('An exercise movement was removed from the workout routine!')
+    } else {
+      throw new Error('Exercise movement not found')
+    }
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 const getWorkoutEquipment = async (req, res) => {
   try {
     const workout = await Workout.findById(req.params.id)
@@ -94,6 +120,7 @@ module.exports = {
   updateWorkout,
   getWorkoutExercises,
   createExercise,
+  deleteExercise,
   getWorkoutEquipment,
   createEquipment
 }
