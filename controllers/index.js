@@ -48,9 +48,23 @@ const createExercise = async (req, res) => {
   }
 }
 
+const getWorkoutEquipment = async (req, res) => {
+  try {
+    const workout = await Workout.findById(req.params.id)
+    const workoutEquipment = []
+    for await (const equipmentId of workout.equipment) {
+      workoutEquipment.push(await Equipment.findById(equipmentId))
+    }
+    return res.status(200).json(workoutEquipment)
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   getAllWorkouts,
   createWorkout,
   getWorkoutExercises,
-  createExercise
+  createExercise,
+  getWorkoutEquipment
 }
