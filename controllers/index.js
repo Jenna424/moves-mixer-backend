@@ -32,8 +32,25 @@ const getWorkoutExercises = async (req, res) => {
   }
 }
 
+const createExercise = async (req, res) => {
+  try {
+    const exercise = await new Exercise(req.body)
+    await exercise.save()
+    // Add the exercise to the workout's array of exercises
+    const workoutId = req.body.workout
+    const workout = await Workout.findById(workoutId)
+    await Workout.findByIdAndUpdate(workoutId, {
+      exercises: [...workout.exercises, exercise._id]
+    })
+    return res.status(201).json(exercise)
+  } catch (error) {
+    return res.status(500).json({ error: error.message })
+  }
+}
+
 module.exports = {
   getAllWorkouts,
   createWorkout,
-  getWorkoutExercises
+  getWorkoutExercises,
+  createExercise
 }
