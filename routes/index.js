@@ -8,6 +8,8 @@ router.get('/workouts', controllers.getAllWorkouts)
 
 router.post('/workouts', controllers.createWorkout)
 
+router.put('/workouts/:id', controllers.updateWorkout)
+
 router.get('/workouts/:id/exercises', controllers.getWorkoutExercises)
 
 router.post('/exercises', controllers.createExercise)
