@@ -9,6 +9,17 @@ const getAllWorkouts = async (req, res) => {
   }
 }
 
+const createWorkout = async (req, res) => {
+  try {
+    const workout = await new Workout(req.body)
+    await workout.save()
+    return res.status(201).json(workout)
+  } catch (error) {
+    return res.status(500).json({ error: error.message })
+  }
+}
+
 module.exports = {
-  getAllWorkouts
+  getAllWorkouts,
+  createWorkout
 }
