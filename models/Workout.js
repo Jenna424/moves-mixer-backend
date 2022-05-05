@@ -1,0 +1,15 @@
+const { Schema } = require('mongoose')
+const Workout = new Schema(
+  {
+    title: { type: String, required: true },
+    duration: { type: String, required: true },
+    exercises: [
+      { type: Schema.Types.ObjectId, ref: 'Exercise', required: true }
+    ],
+    equipment: [
+      { type: Schema.Types.ObjectId, ref: 'Equipment', required: true }
+    ]
+  },
+  { timestamps: true }
+)
+module.exports = Workout
