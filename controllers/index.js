@@ -19,6 +19,17 @@ const createWorkout = async (req, res) => {
   }
 }
 
+const updateWorkout = async (req, res) => {
+  try {
+    const workout = await Workout.findByIdAndUpdate(req.params.id, req.body, {
+      new: true
+    })
+    res.json(workout)
+  } catch (err) {
+    res.send(err.message)
+  }
+}
+
 const getWorkoutExercises = async (req, res) => {
   try {
     const workout = await Workout.findById(req.params.id)
@@ -80,6 +91,7 @@ const createEquipment = async (req, res) => {
 module.exports = {
   getAllWorkouts,
   createWorkout,
+  updateWorkout,
   getWorkoutExercises,
   createExercise,
   getWorkoutEquipment,
