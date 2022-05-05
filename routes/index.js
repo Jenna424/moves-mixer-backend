@@ -10,4 +10,6 @@ router.post('/workouts', controllers.createWorkout)
 
 router.get('/workouts/:id/exercises', controllers.getWorkoutExercises)
 
+router.post('/exercises', controllers.createExercise)
+
 module.exports = router
