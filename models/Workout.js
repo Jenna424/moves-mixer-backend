@@ -3,6 +3,7 @@ const Workout = new Schema(
   {
     title: { type: String, required: true },
     trainingType: { type: String, required: true },
+    targetArea: { type: String, required: true },
     duration: { type: Number, required: true },
     image: { type: String, required: true },
     exercises: [
