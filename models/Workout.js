@@ -6,10 +6,6 @@ const Workout = new Schema(
     targetArea: { type: String, required: true },
     duration: { type: Number, required: true },
     image: { type: String, required: true },
-    completed: {
-      type: Boolean,
-      default: false
-    },
     exercises: [
       { type: Schema.Types.ObjectId, ref: 'Exercise', required: true }
     ],
