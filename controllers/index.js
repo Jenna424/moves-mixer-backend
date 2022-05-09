@@ -117,9 +117,9 @@ const createEquipment = async (req, res) => {
 module.exports = {
   getAllWorkouts,
   createWorkout,
-  updateWorkout,
   getWorkoutExercises,
   createExercise,
+  updateExercise,
   deleteExercise,
   getWorkoutEquipment,
   createEquipment
