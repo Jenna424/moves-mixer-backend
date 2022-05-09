@@ -9,8 +9,7 @@ const main = async () => {
     trainingType: 'Strength Training',
     targetArea: 'Lower Body',
     duration: 30,
-    image:
-      'https://st2.depositphotos.com/6840962/10931/v/950/depositphotos_109319864-stock-illustration-vector-illustrations-of-ballet-icon.jpg',
+    image: 'https://i.imgur.com/AGlIqww.png',
     exercises: [],
     equipment: []
   })
@@ -21,8 +20,7 @@ const main = async () => {
     trainingType: 'Strength Training',
     targetArea: 'Lower Body',
     duration: 45,
-    image:
-      'https://media.istockphoto.com/vectors/yoga-line-illustration-icon-on-white-background-vector-id1250065930?k=20&m=1250065930&s=612x612&w=0&h=j4vkcrrQ368OW1lr2m3zD_8NiGbD2RSeGqsRrqhqkIw=',
+    image: 'https://i.imgur.com/B0rjObN.png',
     exercises: [],
     equipment: []
   })
@@ -33,8 +31,7 @@ const main = async () => {
     trainingType: 'Strength Training',
     targetArea: 'Upper Body',
     duration: 15,
-    image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoRGUCGT1nOyW7tyvZcQw3IfiDHJkPyByhdg&usqp=CAU',
+    image: 'https://i.imgur.com/e1SeQ88.png',
     exercises: [],
     equipment: []
   })
