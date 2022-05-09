@@ -19,17 +19,6 @@ const createWorkout = async (req, res) => {
   }
 }
 
-const updateWorkout = async (req, res) => {
-  try {
-    const workout = await Workout.findByIdAndUpdate(req.params.id, req.body, {
-      new: true
-    })
-    res.json(workout)
-  } catch (err) {
-    res.send(err.message)
-  }
-}
-
 const getWorkoutExercises = async (req, res) => {
   try {
     const workout = await Workout.findById(req.params.id)
@@ -56,6 +45,17 @@ const createExercise = async (req, res) => {
     return res.status(201).json(exercise)
   } catch (error) {
     return res.status(500).json({ error: error.message })
+  }
+}
+
+const updateExercise = async (req, res) => {
+  try {
+    const exercise = await Exercise.findByIdAndUpdate(req.params.id, req.body, {
+      new: true
+    })
+    res.json(exercise)
+  } catch (err) {
+    res.send(err.message)
   }
 }
 
