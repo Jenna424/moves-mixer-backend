@@ -92,13 +92,12 @@ const main = async () => {
   await workout1.save()
 
   const exercise4 = await new Exercise({
-    name: 'Leg Circles',
+    name: 'Scissor Kicks',
     instructions:
-      'Lie faceup with your arms by your sides, palms down. Bend your left knee and place your left foot flat on the floor. Extend your right leg up so that it’s perpendicular to the floor. Circle your right leg out to the side, down toward the ground, and return to your starting position. Then reverse the circle. Then switch sides.',
+      "Lie faceup. Extend your right leg up so that it's perpendicular to the floor. Bring your hands behind your right leg, pulling it in toward your face, and curl your head up. Lift your left leg off the floor a few inches. Switch legs, pulling your left leg in toward you and letting your right leg hover above the floor. Continue switching your legs.",
     sets: 2,
     reps: 10,
-    image:
-      'https://hips.hearstapps.com/womenshealth-production.s3.amazonaws.com/images/4804/daisy_leg_circle__medium_4x3.jpg',
+    image: 'https://i.imgur.com/PRREaPR.png',
     workout: workout2._id
   })
   await exercise4.save()
@@ -112,8 +111,7 @@ const main = async () => {
       'Lie on your back. Raise your hips to create a straight line from your knees to your shoulders. Squeeze your core and pull your belly button back toward your spine. Hold for 20 to 30 seconds. Lower the hips to return to the starting position.',
     sets: 3,
     reps: 15,
-    image:
-      'https://media.istockphoto.com/vectors/pilates-vector-id165024733?b=1&k=20&m=165024733&s=612x612&w=0&h=MiMC5IFvJBFeMNVZBitgBXoGOHo5FCGk_eBPszxubuE=',
+    image: 'https://i.imgur.com/PvtI044.png',
     workout: workout2._id
   })
   await exercise5.save()
@@ -127,8 +125,7 @@ const main = async () => {
       'Start on your forearms and knees. Exhale to draw the abs inward and upward, taking one leg back to a straight position and then the other.  Hold for 30–60 seconds',
     sets: 2,
     reps: 1,
-    image:
-      'https://media.istockphoto.com/vectors/woman-doing-plank-exercise-on-blue-mat-with-stopclock-symbol-over-her-vector-id1204463032?b=1&k=20&m=1204463032&s=170667a&w=0&h=O54bZBQdlFRclU_hPGok2zZxGzHDraL3pkMEnHqUbu4=',
+    image: 'https://i.imgur.com/h3FHo0f.png',
     workout: workout2._id
   })
   await exercise6.save()
@@ -139,7 +136,7 @@ const main = async () => {
   const equipment2 = await new Equipment({
     name: 'Pilates Ball',
     specifications: 'Inflatable mini stability ball',
-    image: 'https://m.media-amazon.com/images/I/71AaM88bHuL._AC_SX679_.jpg',
+    image: 'https://i.imgur.com/1mos77i.png',
     workout: workout2._id
   })
   await equipment2.save()
