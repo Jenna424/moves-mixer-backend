@@ -150,8 +150,7 @@ const main = async () => {
       'Bring the dumbbells all the way up to your shoulders by bending your elbows. Reverse the curl slowly and repeat.',
     sets: 3,
     reps: 8,
-    image:
-      'https://www.spotebi.com/wp-content/uploads/2014/10/biceps-curl-exercise-illustration.jpg',
+    image: 'https://i.imgur.com/WIXMDT5.png',
     workout: workout3._id
   })
   await exercise7.save()
@@ -160,13 +159,12 @@ const main = async () => {
   await workout3.save()
 
   const exercise8 = await new Exercise({
-    name: 'Tricep Extensions',
+    name: 'Tricep Dips',
     instructions:
-      'Lift the dumbbell directly overhead. Extend both arms fully, then exhale and slowly lower the weight down, bringing the weight behind the head by bending at the elbows.',
+      'Press into your palms to lift your body and slide forward. Lower yourself until your elbows are bent between 45 and 90 degrees. Push yourself back up slowly until your arms are almost straight and repeat.',
     sets: 3,
     reps: 8,
-    image:
-      'https://www.spotebi.com/wp-content/uploads/2014/10/dumbbell-triceps-extension-exercise-illustration.jpg',
+    image: 'https://i.imgur.com/YohhqRC.png',
     workout: workout3._id
   })
   await exercise8.save()
@@ -180,8 +178,7 @@ const main = async () => {
       'Raise and extend your arms to the sides without bending the elbows. Slowly rotate your arms forward, making small circles. Complete a set in one direction and then switch, rotating backward.',
     sets: 3,
     reps: 8,
-    image:
-      'https://www.spotebi.com/wp-content/uploads/2014/10/big-arm-circles-exercise-illustration.jpg',
+    image: 'https://i.imgur.com/mkQEuLL.png',
     workout: workout3._id
   })
   await exercise9.save()
@@ -192,8 +189,7 @@ const main = async () => {
   const equipment3 = await new Equipment({
     name: 'Dumbbell',
     specifications: 'Anti-slip grip; 3lbs',
-    image:
-      'https://www.mytrendyphone.eu/images/Anti-Slip-Fitness-Neoprene-Dumbbell-1kg-Blue-22102021-01-p.jpg',
+    image: 'https://i.imgur.com/xaMYFFX.png',
     workout: workout3._id
   })
   await equipment3.save()
