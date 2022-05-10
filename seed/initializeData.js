@@ -43,8 +43,7 @@ const main = async () => {
       'Stand with heels together, toes turned outward. Bend the knees deeply, moving straight down. Then straighten your legs and return to the starting position',
     sets: 3,
     reps: 8,
-    image:
-      'https://www.wikihow.com/images/thumb/4/45/Do-a-Plie-in-Ballet-Step-3-Version-3.jpg/v4-460px-Do-a-Plie-in-Ballet-Step-3-Version-3.jpg',
+    image: 'https://i.imgur.com/dxqbUOI.png',
     workout: workout1._id
   })
   await exercise1.save()
@@ -59,8 +58,7 @@ const main = async () => {
       'Press through the balls of your feet, lifting your heels up high. Then lower down with control.',
     sets: 3,
     reps: 8,
-    image:
-      'https://www.wikihow.com/images/thumb/3/33/Do-a-Releve-Step-21.jpg/v4-460px-Do-a-Releve-Step-21.jpg.webp',
+    image: 'https://i.imgur.com/hT4QZL5.png',
     workout: workout1._id
   })
   await exercise2.save()
@@ -69,13 +67,12 @@ const main = async () => {
   await workout1.save()
 
   const exercise3 = await new Exercise({
-    name: 'Ronde de Jambe',
+    name: 'Arabesque',
     instructions:
-      'Move your leg from the front to the back in a circular motion',
+      'Begin in first position. Shift your weight to the supporting leg. Extend your working leg. Support your core and upper body. Raise your arms. Lift your working leg. Lean forward.',
     sets: 3,
     reps: 8,
-    image:
-      'http://balletwithchiara.weebly.com/uploads/5/3/3/2/53322897/3594675_orig.png',
+    image: 'https://i.imgur.com/WVXhjIV.png',
     workout: workout1._id
   })
   await exercise3.save()
@@ -85,9 +82,8 @@ const main = async () => {
 
   const equipment1 = await new Equipment({
     name: 'Ballet Barre',
-    specifications: 'Traditional Wood; Double Bar',
-    image:
-      'https://cdn11.bigcommerce.com/s-c53ep9jjoe/images/stencil/1280x1280/attribute_rule_images/41864_source_1634740618.jpg',
+    specifications: 'Traditional Wood',
+    image: 'https://i.imgur.com/XwRvasd.jpeg',
     workout: workout1._id
   })
   await equipment1.save()
