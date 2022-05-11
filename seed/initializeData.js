@@ -83,7 +83,7 @@ const main = async () => {
   const equipment1 = await new Equipment({
     name: 'Ballet Barre',
     specifications: 'Traditional Wood',
-    image: 'https://i.imgur.com/XwRvasd.jpeg',
+    image: 'https://i.imgur.com/rUKOXq4.png',
     workout: workout1._id
   })
   await equipment1.save()
