@@ -58,7 +58,7 @@ const main = async () => {
       'Press through the balls of your feet, lifting your heels up high. Then lower down with control.',
     sets: 3,
     reps: 8,
-    image: 'https://i.imgur.com/hT4QZL5.png',
+    image: 'https://i.imgur.com/UAaJ8xR.png',
     workout: workout1._id
   })
   await exercise2.save()
