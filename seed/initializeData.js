@@ -40,7 +40,7 @@ const main = async () => {
   const exercise1 = await new Exercise({
     name: 'Plié',
     instructions:
-      'Stand with heels together, toes turned outward. Bend the knees deeply, moving straight down. Then straighten your legs and return to the starting position',
+      'Stand with heels together, toes turned outward. Bend the knees deeply, moving straight down. Then straighten your legs and return to the starting position.',
     sets: 3,
     reps: 8,
     image: 'https://i.imgur.com/dxqbUOI.png',
@@ -122,7 +122,7 @@ const main = async () => {
   const exercise6 = await new Exercise({
     name: 'Plank',
     instructions:
-      'Start on your forearms and knees. Exhale to draw the abs inward and upward, taking one leg back to a straight position and then the other.  Hold for 30–60 seconds',
+      'Start on your forearms and knees. Exhale to draw the abs inward and upward, taking one leg back to a straight position and then the other.  Hold for 30–60 seconds.',
     sets: 2,
     reps: 1,
     image: 'https://i.imgur.com/h3FHo0f.png',
