@@ -214,7 +214,7 @@ const main = async () => {
       'Spin on one foot with the raised foot touching the knee of the supporting leg.',
     sets: 2,
     reps: 5,
-    image: 'https://i.imgur.com/Mdf3fEv.png',
+    image: 'https://i.imgur.com/uzN3FmF.png',
     workout: workout1._id
   })
   await exercise10.save()
