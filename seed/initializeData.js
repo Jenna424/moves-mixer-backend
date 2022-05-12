@@ -37,6 +37,17 @@ const main = async () => {
   })
   await workout3.save()
 
+  const workout4 = await new Workout({
+    title: 'Swimming Routine',
+    trainingType: 'Cardio',
+    targetArea: 'Full Body',
+    duration: 25,
+    image: 'https://i.imgur.com/Q3uH3Sm.png',
+    exercises: [],
+    equipment: []
+  })
+  await workout4.save()
+
   const exercise1 = await new Exercise({
     name: 'Plié',
     instructions:
