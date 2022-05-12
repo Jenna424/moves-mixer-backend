@@ -147,7 +147,7 @@ const main = async () => {
   const exercise7 = await new Exercise({
     name: 'Bicep Curl',
     instructions:
-      'Bring the dumbbells all the way up to your shoulders by bending your elbows. Reverse the curl slowly and repeat.',
+      'Start standing with a dumbbell in each hand. Your elbows should rest at your sides and your forearms should extend out in front of your body. Bring the dumbbells all the way up to your shoulders by bending your elbows. Reverse the curl slowly and repeat.',
     sets: 3,
     reps: 8,
     image: 'https://i.imgur.com/WIXMDT5.png',
