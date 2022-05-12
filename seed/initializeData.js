@@ -230,6 +230,17 @@ const main = async () => {
   workout1.equipment = [...workout1.equipment, equipment4._id]
   await workout1.save()
 
+  const equipment5 = await new Equipment({
+    name: 'Pilates Mat',
+    specifications: 'Eco-friendly; non-slip',
+    image: 'https://i.imgur.com/WzJJMNW.png',
+    workout: workout2._id
+  })
+  await equipment5.save()
+
+  workout2.equipment = [...workout2.equipment, equipment5._id]
+  await workout2.save()
+
   const exercise10 = await new Exercise({
     name: 'Pirouette',
     instructions:
