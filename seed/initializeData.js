@@ -222,6 +222,20 @@ const main = async () => {
   workout1.exercises = [...workout1.exercises, exercise10._id]
   await workout1.save()
 
+  const exercise11 = await new Exercise({
+    name: 'Grand Battement',
+    instructions:
+      'Extend one leg outward to the front, side or back of the body and then return it back to the supporting leg.',
+    sets: 3,
+    reps: 10,
+    image: 'https://i.imgur.com/J5VIIP9.png',
+    workout: workout1._id
+  })
+  await exercise11.save()
+
+  workout1.exercises = [...workout1.exercises, exercise11._id]
+  await workout1.save()
+
   console.log('seeded workoutRoutinesDatabase')
 }
 const run = async () => {
