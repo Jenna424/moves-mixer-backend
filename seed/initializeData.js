@@ -197,6 +197,17 @@ const main = async () => {
   workout3.equipment = [...workout3.equipment, equipment3._id]
   await workout3.save()
 
+  const equipment4 = await new Equipment({
+    name: 'Ballet Slippers',
+    specifications: 'Satin and leather',
+    image: 'https://i.imgur.com/drcmM0a.png',
+    workout: workout1._id
+  })
+  await equipment4.save()
+
+  workout1.equipment = [...workout1.equipment, equipment4._id]
+  await workout1.save()
+
   console.log('seeded workoutRoutinesDatabase')
 }
 const run = async () => {
