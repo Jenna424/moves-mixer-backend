@@ -18,7 +18,7 @@ const main = async () => {
   const workout2 = await new Workout({
     title: 'Pilates Routine',
     trainingType: 'Strength Training',
-    targetArea: 'Lower Body',
+    targetArea: 'Core',
     duration: 45,
     image: 'https://i.imgur.com/B0rjObN.png',
     exercises: [],
