@@ -1,6 +1,9 @@
 {
   "name": "moves-mixer-backend",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "description": "## Date: 5/4/22",
   "main": "index.js",
   "scripts": {
@@ -21,6 +24,7 @@
   "homepage": "https://github.com/Jenna424/moves-mixer-backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.3.2",
     "morgan": "^1.10.0"
