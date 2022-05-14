@@ -10,16 +10,16 @@
 
 ### **_Description_**
 
-##### The app "Moves Mixer," created for Project 4 of GA's SEIR, enables users to design workout routines. Users can create, edit, access, and delete exercise movements.
+##### The app "Moves Mixer," created for Project 4 of GA's SEIR, enables users to design custom workout routines. Users can access and create workouts, add and delete exercise movements, as well as edit exercise movements to mark them as completed. Users can also add equipment to a workout.
 
-##### Navigate to [the deployed site]() to view workout routines.
+##### Navigate to [the deployed site](https://serene-falls-17751.herokuapp.com/) to view workout routines and begin mixing in moves!
 
 ---
 
 ### **_Technologies Used_**
 
 - Technologies: MongoDB, Mongoose, Express, React, Node, HTML, CSS, JavaScript
-- Styling and Images: Google Fonts, Unsplash, Imgur
+- Styling and Images: Google Fonts, The Noun Project, Imgur
 - Project Planning: [Trello](https://trello.com/b/DSCna9VU/move-mixer), [draw.io](https://app.diagrams.net/#G1tS6ZlzS1Kbbn2_5WeEXI2egsKb5gcEQZ)
 - Development Tools: Visual Studio Code
 
@@ -33,18 +33,23 @@
 
 ### **_Screenshots_**
 
+![Image](https://i.imgur.com/5AZN4ee.png)
+
+![Image](https://i.imgur.com/vQ7prFZ.png)
+
 ---
 
 ### **_Future Updates_**
 
 - [ ] Implement OAuth login
+- [ ] Enable users to filter workouts by target area and training type
 - [ ] Enhance CSS
 
 ---
 
 ### **_Credits_**
 
-##### **Unsplash:** [unsplash.com](https://unsplash.com/)
+##### **The Noun Project:** [thenounproject.com](https://thenounproject.com/)
 
 ##### **Imgur:** [imgur.com](https://imgur.com/)
 
