@@ -10,7 +10,7 @@
 
 ### **_Description_**
 
-##### The app "Moves Mixer," created for Project 4 of GA's SEIR, enables users to design custom workout routines. Users can access and create workouts, add and delete exercise movements, as well as edit exercise movements to mark them as completed. Users can also add equipment to a workout.
+##### The app "Moves Mixer," created for Project 4 of GA's SEIR, enables users to design custom workout routines. Users can access and create workouts, add and delete exercise movements that belong to those workouts, and edit exercise movements to mark them as completed. Users can also add equipment requirements to a workout.
 
 ##### Navigate to [the deployed site](https://serene-falls-17751.herokuapp.com/) to view workout routines and begin mixing in moves!
 
@@ -21,13 +21,13 @@
 - Technologies: MongoDB, Mongoose, Express, React, Node, HTML, CSS, JavaScript
 - Styling and Images: Google Fonts, The Noun Project, Imgur
 - Project Planning: [Trello](https://trello.com/b/DSCna9VU/move-mixer), [draw.io](https://app.diagrams.net/#G1tS6ZlzS1Kbbn2_5WeEXI2egsKb5gcEQZ)
-- Development Tools: Visual Studio Code
+- Development Tools: Visual Studio Code, Heroku
 
 ---
 
 ### **_Getting Started_**
 
-##### Fork and clone this repository and cd into moves-mixer-backend/ project directory. In one terminal, seed the database by running the command node seed/initializeData.js. Then run the command npm run dev. In another terminal, cd into moves-mixer-frontend/ directory and run npm start. Begin exploring workout routines and exercise movements in your browser!
+##### Fork and clone this repository and cd into moves-mixer-backend/ project directory. Install all dependencies by running npm install. Seed the database by running the command node seed/initializeData.js. Then run the command npm run dev. In another terminal, cd into moves-mixer-frontend/ directory, run npm install to install all dependencies, and then run npm start to start up the app. Begin exploring and devising workout routines in your browser!
 
 ---
 
